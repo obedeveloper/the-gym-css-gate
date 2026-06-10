@@ -1,1 +1,10 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+  --color-header: #f6f6f6;
+  --color-brand: #51c6dc;
+}
+
+.wrapper {
+  @apply mx-auto px-4;
+}
