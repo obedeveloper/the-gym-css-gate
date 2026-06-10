@@ -3,8 +3,17 @@
 @theme {
   --color-header: #f6f6f6;
   --color-brand: #51c6dc;
+  --color-dark-brand: #4598a7;
 }
 
-.wrapper {
+@utility wrapper {
   @apply container mx-auto px-4 xl:px-30;
+}
+
+@utility stack {
+  @apply grid;
+
+  & > * {
+    grid-area: 1/-1;
+  }
 }
