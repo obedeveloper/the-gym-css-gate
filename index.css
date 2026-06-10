@@ -34,3 +34,19 @@
     @apply col-span-2 text-lg text-main/80;
   }
 }
+
+@utility stats {
+  @apply space-y-1;
+
+  &:not(:last-child) {
+    @apply border-main/30 lg:border-r-2;
+  }
+
+  h3 {
+    @apply text-2xl font-bold sm:text-3xl;
+  }
+
+  p {
+    @apply opacity-70 sm:text-lg;
+  }
+}
