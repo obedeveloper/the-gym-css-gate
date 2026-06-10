@@ -36,7 +36,7 @@
 }
 
 @utility stats {
-  @apply space-y-1;
+  @apply space-y-1 text-main/85;
 
   &:not(:last-child) {
     @apply border-main/30 lg:border-r-2;
@@ -48,5 +48,33 @@
 
   p {
     @apply opacity-70 sm:text-lg;
+  }
+}
+
+@utility goal-card {
+  @apply flex flex-col gap-3 rounded-lg bg-white p-5 shadow-lg;
+
+  & > img {
+    @apply aspect-video rounded-xl object-cover;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+
+  p {
+    @apply opacity-70;
+  }
+
+  div {
+    @apply border-t-2 border-header pbs-4;
+
+    img {
+      @apply w-5;
+    }
+  }
+
+  button {
+    @apply flex items-center gap-2 rounded bg-dark-brand/30 px-3 py-1;
   }
 }
