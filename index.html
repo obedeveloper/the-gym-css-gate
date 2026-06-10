@@ -7,18 +7,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="bg-header">
-      <div class="wrapper flex justify-between py-5">
-        <img src="/images/home.svg" alt="" class="w-14" />
+    <header>
+      <div class="border-b border-gray-500/30 bg-header">
+        <div class="wrapper flex justify-between py-5 xl:justify-end xl:py-3">
+          <img src="/images/home.svg" alt="" class="w-14 xl:hidden" />
 
-        <div class="flex gap-3 [&_img]:w-5">
-          <img src="./images/search.svg" alt="" />
-          <button class="flex items-center gap-1">
-            <img src="./images/flags/en.svg" alt="" />
-            EN
-            <img src="./images/dropdown.svg" alt="" />
+          <div
+            class="flex gap-3 xl:gap-5 [&_a]:hidden [&_a]:font-semibold [&_a]:xl:inline [&_img]:w-5"
+          >
+            <a href="" class="capitalize">Become an agent</a>
+            <a href="">Partenership</a>
+            <img src="./images/search.svg" alt="" class="xl:hidden" />
+            <button class="flex items-center gap-1">
+              <img src="./images/flags/en.svg" alt="" />
+              EN
+              <img src="./images/dropdown.svg" alt="" />
+            </button>
+            <img src="./images/menu.svg" alt="" class="w-8! xl:hidden" />
+          </div>
+        </div>
+      </div>
+      <div class="wrapper hidden justify-between xl:flex">
+        <img src="/images/home.svg" alt="" class="w-14" />
+        <div
+          class="flex gap-5 *:flex *:items-center *:gap-1 *:text-lg *:font-semibold [&_img]:w-6"
+        >
+          <button>
+            Universities <img src="./images/dropdown.svg" alt="" />
           </button>
-          <img src="./images/menu.svg" alt="" class="w-8!" />
+          <button>Masters</button>
+          <button>
+            Language Schools <img src="./images/dropdown.svg" alt="" />
+          </button>
+          <button>
+            Summer Schools <img src="./images/dropdown.svg" alt="" />
+          </button>
+          <button>High School</button>
+        </div>
+        <div class="flex items-center gap-4 py-9">
+          <img src="./images/search.svg" alt="" class="w-6" />
+          <button class="rounded-md bg-brand px-6 py-2 font-semibold">
+            Login
+          </button>
         </div>
       </div>
     </header>
