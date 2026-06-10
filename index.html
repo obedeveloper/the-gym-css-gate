@@ -7,6 +7,86 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="bg-gray-300 text-2xl">Hello World!</h1>
+    <header>
+      <div class="border-b border-gray-500/30 bg-header">
+        <div class="wrapper flex justify-between py-5 xl:justify-end xl:py-3">
+          <img src="/images/home.svg" alt="" class="w-14 xl:hidden" />
+
+          <div
+            class="flex gap-3 xl:gap-5 [&_a]:hidden [&_a]:font-semibold [&_a]:xl:inline [&_img]:w-5"
+          >
+            <a href="" class="capitalize">Become an agent</a>
+            <a href="">Partenership</a>
+            <img src="./images/search.svg" alt="" class="xl:hidden" />
+            <button class="flex items-center gap-1">
+              <img src="./images/flags/en.svg" alt="" />
+              EN
+              <img src="./images/dropdown.svg" alt="" />
+            </button>
+            <img src="./images/menu.svg" alt="" class="w-8! xl:hidden" />
+          </div>
+        </div>
+      </div>
+      <div class="wrapper hidden justify-between xl:flex">
+        <img src="/images/home.svg" alt="" class="w-14" />
+        <div
+          class="flex gap-5 *:flex *:items-center *:gap-1 *:text-lg *:font-semibold [&_img]:w-6"
+        >
+          <button>
+            Universities <img src="./images/dropdown.svg" alt="" />
+          </button>
+          <button>Masters</button>
+          <button>
+            Language Schools <img src="./images/dropdown.svg" alt="" />
+          </button>
+          <button>
+            Summer Schools <img src="./images/dropdown.svg" alt="" />
+          </button>
+          <button>High School</button>
+        </div>
+        <div class="flex items-center gap-4 py-9">
+          <img src="./images/search.svg" alt="" class="w-6" />
+          <button class="rounded-md bg-brand px-6 py-2 font-semibold">
+            Login
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="stack text-white">
+        <img
+          src="./images/hero.jpeg"
+          alt=""
+          class="self-stretch object-cover"
+        />
+        <div class="bg-linear-to-t from-black/75 to-transparent">
+          <div
+            class="wrapper flex h-full flex-col gap-5 py-5 md:gap-20 md:py-8 *:md:max-w-1/2"
+          >
+            <h1
+              class="text-3xl font-bold md:max-w-2/3 md:text-4xl lg:max-w-3/4 lg:text-5xl"
+            >
+              Find Your Perfect University, Language School or Summer Schools
+              Program
+            </h1>
+            <p class="md:text-lg">
+              Uni4edu simplifies the journey to studying abroad by bringing top
+              institutions worldwide into a single digital platform. Manage your
+              entire process—from school selection to application—directly
+              within the system and achieve your academic and career goals
+              online.
+            </p>
+            <div
+              class="mt-4 flex grow flex-col gap-2 *:grow *:rounded-md *:py-2 md:flex-row md:items-end md:gap-8"
+            >
+              <button class="bg-dark-brand">Explore programs</button>
+              <button class="border bg-white text-dark-brand">
+                Get Free Advice
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
